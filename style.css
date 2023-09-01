@@ -95,7 +95,6 @@ h1{
 }
 .tasks{
     width: 100%;
-    
     max-height: 80%;
 }
 .task{
@@ -120,6 +119,7 @@ h1{
 }
 .taskInfo p{
 font-size: 22px;
+word-wrap:break-word ;
 }
 .done{
     text-decoration: line-through;

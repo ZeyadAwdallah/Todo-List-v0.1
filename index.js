@@ -61,7 +61,7 @@ function addTask(title) {
 // Event listener for Enter key in the input field
 input.addEventListener("keydown", function (event) {
     if (event.key === "Enter") {
-        if (this.value !== '') {
+        if (this.value.trim() !== '') {
             addTask(this.value);
             this.value = "";
         } else {
@@ -85,7 +85,7 @@ function deleteTask(index) {
 function updateTask(index) {
     let task = tasks[index];
     let newTitle = prompt('Enter your edit', task.title);
-    if (newTitle !== null) {
+    if (newTitle.trim() !== "") {
         task.title = newTitle;
         storeTasks();
         fill();
