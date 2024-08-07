@@ -354,6 +354,10 @@ h1 {
         padding: 8px 15px;
         font-size: 0.9rem;
     }
+
+    #completeAll {
+        display:none
+    }
 }
 
 @media (max-width: 480px) {
